@@ -26,7 +26,7 @@ chai
 .post("/add")
  .send({ num1: 7, num2: 5 })
 .end((err, res) => {
-expect(res).to.have.status(200);
+expect(res).to.have.status(500);
 expect(res.body.status).to.equals("success");
 expect(res.body.result).to.equals(12);
  done();
